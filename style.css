@@ -1,0 +1,379 @@
+:root {
+  --black: #111111;
+  --white: #ffffff;
+  --gray: #666666;
+  --light-gray: #f5f5f5;
+  --border: #e5e5e5;
+}
+
+* {
+  box-sizing: border-box;
+  /* margin-top: 5px; */
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 85px; */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.navbar {
+  background: var(--white) !important;
+  min-height: 68px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* #pendidikan, #keahlian{
+  scroll-margin-top: 90px;
+} */
+
+  /* #tentang {
+  margin-top: 30px;
+  } */
+
+.hero {
+min-height: 520px;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.fiqih-logo {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Amiri", serif;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--black) !important;
+}
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--gray) !important;
+}
+
+.navbar-toggler {
+  border-color: #cccccc;
+}
+
+.text-primary {
+  color: var(--black) !important;
+}
+
+.bg-primary,
+.text-bg-primary {
+  background-color: var(--black) !important;
+}
+
+.btn-primary {
+  background: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #333333;
+  border-color: #333333;
+}
+
+.btn-outline-primary {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-outline-primary:hover {
+  background: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+}
+
+.btn-light {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.hero {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  overflow-wrap: anywhere;
+}
+
+.hero h2 {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.lead {
+  color: var(--gray) !important;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.illustration {
+  max-width: 390px;
+  margin: auto;
+  padding: 35px 25px;
+  text-align: center;
+  background: var(--light-gray);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.illustration > i {
+  display: block;
+  font-size: 5rem;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.illustration p {
+  color: var(--gray);
+}
+
+.code-line {
+  height: 7px;
+  width: 85%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: #d0d0d0;
+}
+
+.code-line.short {
+  width: 50%;
+  background: #888888;
+}
+
+.card-section {
+  padding: clamp(20px, 3vw, 32px);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  scroll-margin-top: 90px;
+}
+
+.card-section h2 {
+  margin-bottom: 22px;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+.card-section p {
+  line-height: 1.8;
+}
+
+.badge-tag {
+  display: inline-block;
+  margin: 3px 2px;
+  padding: 7px 11px;
+  border-radius: 30px;
+  background: var(--light-gray);
+  color: var(--black);
+  border: 1px solid var(--border);
+  font-size: .75rem;
+}
+
+.timeline-item {
+  padding: 5px 0 18px 18px;
+  margin-bottom: 12px;
+  border-left: 2px solid #cccccc;
+}
+
+.timeline-item h3 {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.timeline-item p,
+.timeline-item span {
+  color: var(--gray);
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: .88rem;
+  font-weight: 600;
+}
+
+.progress {
+  height: 8px;
+  background: #eeeeee;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background: var(--black);
+  border-radius: 20px;
+}
+
+.project-card {
+  height: 100%;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: transform .2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  font-size: 1rem;
+}
+
+.project-card p {
+  color: var(--gray);
+}
+
+.project-icon {
+  display: grid;
+  place-items: center;
+  height: 140px;
+  color: var(--white);
+  background: var(--black);
+  font-size: 3.5rem;
+}
+
+.project-icon.second {
+  background: #333333;
+}
+
+.project-icon.third {
+  background: #555555;
+}
+
+.contact-section {
+  padding: clamp(24px, 5vw, 45px);
+  border-radius: 14px;
+  background: var(--black);
+  color: var(--white);
+}
+
+.contact-section h2 {
+  color: var(--white);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.contact-section p {
+  overflow-wrap: anywhere;
+}
+
+.contact-section i {
+  margin-right: 8px;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 25px 12px;
+  background: var(--black);
+  color: var(--white);
+  font-size: .85rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 12px 0;
+  }
+
+  .hero .container {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html {
+    scroll-padding-top: 75px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+
+  .hero .btn {
+    font-size: .9rem;
+  }
+
+  .illustration {
+    padding: 25px 18px;
+  }
+
+  .illustration > i {
+    font-size: 4rem;
+  }
+
+  .card-section {
+    padding: 20px;
+  }
+
+  .project-icon {
+    height: 120px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  #tentang,
+  #pendidikan,
+  #keahlian,
+  #project,
+  #kontak {
+    scroll-margin-top: 75px;
+  }
+}
